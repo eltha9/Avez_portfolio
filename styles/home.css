@@ -1,0 +1,106 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* 
+    Menu / small position fixed content 
+*/
+
+/* logo */
+a.logo{
+    display: block;
+    font-family: Cellini-Medium, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    width: 15.3vw;
+    padding: 40px 0 0 16px;
+    z-index: 20;
+}
+
+.social{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 76px 30px;
+}
+.social img{
+    display: block;
+    width: 18px;
+}
+.social .facebook img{
+    width:10px ;
+    margin: 22px 0;
+}
+
+/* 
+    Main animation 
+*/
+div.home-animation-window{
+    z-index: -2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;    
+    display: flex;
+}
+    div.home-animation-window *{
+        display: block;
+        height: 100%;
+    }
+    div.home-animation-window .window-side{
+        width: 15.5%;
+    }
+    div.home-animation-window .window-center{
+        width: 13.8%;
+        border-left: 1px solid #979797;
+    }
+    div.home-animation-window .window-side.right{
+        width: 15.5%;
+        border-left: 1px solid #979797;
+    }
+
+div.window-text{
+    position: absolute;
+    color: white;
+
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%,-50%) ;
+
+
+    font-family: Frank Ruhl Libre, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75px;
+    line-height: 89px;
+    text-align: center;
+    letter-spacing: 1.84426px;
+
+
+}
+    div.window-text span{
+        display: block;
+    }
+    
