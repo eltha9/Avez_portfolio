@@ -67,17 +67,21 @@ div.home-animation-window{
     div.home-animation-window *{
         display: block;
         height: 100%;
+        
     }
     div.home-animation-window .window-side{
         width: 15.5%;
     }
+    div.home-animation-window .border{
+        border-left: 1px solid #979797;
+    }
     div.home-animation-window .window-center{
         width: 13.8%;
-        border-left: 1px solid #979797;
+        
     }
     div.home-animation-window .window-side.right{
         width: 15.5%;
-        border-left: 1px solid #979797;
+        
     }
 
 div.window-text{
@@ -96,7 +100,7 @@ div.window-text{
     font-size: 75px;
     line-height: 89px;
     text-align: center;
-    letter-spacing: 1.84426px;
+    letter-spacing: 1.8px;
 
 
 }
@@ -104,3 +108,10 @@ div.window-text{
         display: block;
     }
     
+
+
+/* ANIMATION */
+
+@keyframes welcome{
+    
+}

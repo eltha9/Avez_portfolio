@@ -10,18 +10,18 @@
 <body>
     <div class="home-animation-window">
         <div class="window-side"></div>
-        <div class="window-center"></div>
-        <div class="window-center"></div>
-        <div class="window-center"></div>
-        <div class="window-center"></div>
-        <div class="window-center"></div>
-        <div class="window-side right"></div>
+        <div class="window-center border"></div>
+        <div class="window-center border"></div>
+        <div class="window-center border"></div>
+        <div class="window-center border"></div>
+        <div class="window-center border"></div>
+        <div class="window-side right border"></div>
     </div>
     <a class="logo"href="#">gaetan avez.</a>
     <div class="social">
-        <a href="#"><img src="./images/linkedin.svg" alt=""></a>
-        <a class="facebook" href="#"><img src="./images/facebook.svg" alt=""></a>
-        <a href="#"><img src="./images/dribble.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/gaetan-avez/" title="Gaëtan Avez - Linkedin"><img src="./images/linkedin.svg" alt="Linkedin logo"></a>
+        <a class="facebook" href="https://www.facebook.com/gaetan.avez.3" title="Gaëtan Avez - Facebook"><img src="./images/facebook.svg" alt="Facebook logo"></a>
+        <a href="https://dribbble.com/GaetanAvez" title="Gaëtan Avez - Dribbble"><img src="./images/dribble.svg" alt="Dribbble logo"></a>
     </div>
     
     <div class="window-text">
