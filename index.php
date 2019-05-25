@@ -28,6 +28,7 @@
         <span class="first">Welcome to my</span>
         <span class="second">portfolio</span>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./scripts/app.js"></script>
 </body>
 </html>
