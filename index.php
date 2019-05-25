@@ -25,8 +25,8 @@
     </div>
     
     <div class="window-text">
-        <span>Welcome to my</span>
-        <span>portfolio</span>
+        <span class="first">Welcome to my</span>
+        <span class="second">portfolio</span>
     </div>
     <script src="./scripts/app.js"></script>
 </body>

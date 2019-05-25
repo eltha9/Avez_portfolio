@@ -5,6 +5,7 @@ body{
     background-color: black;
     margin: 0;
     position: relative;
+    perspective: 800px;
 }
 
 a{
@@ -91,7 +92,6 @@ div.window-text{
     top:50%;
     left:50%;
 
-    transform: translate(-50%,-50%) ;
 
 
     font-family: Frank Ruhl Libre, serif;
@@ -101,17 +101,40 @@ div.window-text{
     line-height: 89px;
     text-align: center;
     letter-spacing: 1.8px;
+    transform: translate(-50%,-50%);
 
-
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    
 }
-    div.window-text span{
-        display: block;
+    div.window-text span.window-transform{
+        transform: rotateX(0deg);    
     }
+    div.window-text span{
+        transform-origin: 0% 100%;
+        display: block;
+        backface-visibility: hidden;
+        transform: rotateX(-90deg);
+        transition-property: all;
+        transition-duration: 0.8s;
+        transition-timing-function: ease;
+        
+    }
+    div.window-text span.first{
+        transition-delay: 1s;
+    }
+    div.window-text span.second{
+        transition-delay: 1.5s;
+    }
+    
     
 
 
 /* ANIMATION */
 
 @keyframes welcome{
-    
+    0%{transform: translate(-50%,-50%) rotateX(-90deg);}
+    100%{transform: translate(-50%,-50%) rotateX(0deg);}
 }
