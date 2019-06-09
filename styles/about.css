@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; 
 }
 
 a{
@@ -74,7 +75,7 @@ div.home-animation-window{
 }
     div.home-animation-window *{
         display: block;
-        height: 100%;
+        height: 200vh;
         
     }
     div.home-animation-window .window-side{
@@ -112,29 +113,217 @@ div.home-animation-window{
 main{
     width: 80%;
     height: 80%;
-    background-color: #fff;
+
     opacity: 0;
 
-    animation-name: menu;
-    animation-delay: 4.5s;
+    animation-name: content;
+    animation-delay: 0.5s;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
 }
+    main .top{
+        height: 70vh;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+        main .top .left{
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+            main .top .left .contouring{
+                position: absolute;
+                top:0;
+                left:0;
+                border:7px solid #919CAA;
+                width: 27.7vw;
+                height: 50.8vh;
+            }
+            main .top .left .bg{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+                main .top .left .bg h3{
+                    font-family: Jost, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 33px;
+                    margin: 0;
+                }
+                main .top .left .bg img{
+                    border: 35px solid black;
+                    width: 29.6vw ;
+                    height: 54vh;
+                }
+        main .top .right{
+            width: 50%;
+            height: 100%;
+            padding-left: 10px;
+        }
+            main .top .right h1{
+                font-family: Frank Ruhl Libre, serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 61px;
+                line-height: 69px;
+            }
+            main .top .right a{
+                font-family: Jost, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 25px;
+                font-weight: 300;
+                color:white;
+            }
+                main .top .right a img{
+                    vertical-align: middle;
+                }
+
+    main .middle{
+        color:white;
+        width: 100%;
+        position: relative;
+        margin-bottom: 80px;
+    }
+        main .middle h3{
+            font-family: Frank Ruhl Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 62px;
+            line-height: 80px;
+            margin-bottom: 40px;
+        }
+        main .middle .exp{
+            display: flex;
+            flex-direction: column;
+        }
+            main .middle .exp{
+                
+            }
+                main .middle .exp .project{
+                    display: flex;
+                    flex-direction: row; 
+
+                }
+                    main .middle .exp .project div{
+                        margin-right: 40px; 
+                        display: flex;
+                        flex-direction: column; 
+                    }
+                    main .middle .exp .project h4{
+                        font-family: Jost, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 22px;
+                        line-height: 33px;
+                        margin-bottom: 0;
+                    }
+                    main .middle .exp .project span{
+                        font-family: Jost, sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 18px;
+                        color:rgba(255, 255, 255, 0.6)
+                    }
+                    main .middle .exp .project .left{
+                        
+                    }
+                    main .middle .exp .project .mid{
+                        width: 150px;
+                    }   
+                    main .middle .exp .project .right{
+                        
+                    }
+
+    main .middle img{
+        position: absolute;
+        top:8%;
+        right: 0;
+        width: 32px;
+         height: 32px;
+    }
+        
+    
+    main .bottom{
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+        main .bottom h4{
+            font-family: Frank Ruhl Libre;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 62px;
+            line-height: 80px;
+            margin-bottom: 40px;
+        }
+        main .bottom .language{
+            width: 50%;
+            
+        }
+        main .bottom .language .content{
+            display: flex;
+            flex-direction: row;
+        }                
+            main .bottom .language .idioma span{
+                font-family: Jost, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 37px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+            }
+            main .bottom .language div{
+                display: flex;
+                flex-direction: column;
+            }
+            main .bottom .language .level span{
+                font-family: Jost, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 37px;
+                color:#959595;
+                font-weight: 300;
+            }
+        main .bottom .skills{
+            width: 50%;
+        }
+            main .bottom .skills div{
+                
+            }
+            main .bottom .skills h5{
+                font-family: Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 37px;
+                margin-top: 30px;
+                margin-bottom: 0;
+            }
+            main .bottom .skills span{
+                font-family: Jost, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 37px;
+
+                color:rgba(255, 255, 255, 0.6);
+                font-weight: 300;
+            }
 
 
 
 /* ANIMATION */
 
-
-@keyframes bar{
-    0%{
-        transform: translateY(-100%);
-
-    }
-    100%{
-        transform: translateY(0%);
-    }
-}
 @keyframes content{
     0%{
         opacity: 0;
