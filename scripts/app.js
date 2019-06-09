@@ -1,20 +1,29 @@
-/*
-let text = document.querySelectorAll('.window-text span')
+let next_button = document.querySelector('.next-button')
 
-text.style.transform ="translate(-50%,-50%) rotateX(0deg) "
+let position = 0
 
-let animation_text = ()=>{
-    text.forEach(item => {
-        item.classList.add('window-transform')
-        item.style.transform =" rotateX(0deg)"
-    })
-    console.log('hey')
-}
+// dom to translate
+let last = document.querySelector('.last .content')
+let current = document.querySelector('main .content .project .img .content')
+let next = document.querySelector('.next .content')
 
+// dom to change color
+let contour = document.querySelector('main .contour')
 
-setTimeout(animation_text(),2000)
-*/
+// dom to change text
+let id = document.querySelector('main .content .id')
+let title = document.querySelector('main .content h2')
 
+const color=['#B81800','#EFC1A7','#D1D1D1']
+const title_data = ['CONCEPT PAGE UNSPLASH','CONCEPT PAGE FOR A BLOG','THIBAULT’S PORTFOLIO']
 
-// TweenMax.to(".window-text span.first", 0.5, {rotationX:0, delay:0})
-// TweenMax.to(".window-text span.second", 0.5, {rotationX:0, delay:0.3})
+next_button.addEventListener('click', ()=>{
+    position ++
+    last.style.transform = `translateX(${-(position-1)*100}%)`
+    current.style.transform = `translateX(${-position*100}%)`
+    next.style.transform = `translateX(${-position*100}%)`
+    contour.style.background = color[position]
+    title.textContent= title_data[position]
+    id.textContent = `0${position+1}`
+
+})

@@ -49,7 +49,7 @@ a.logo{
 
     display: flex;
     flex-direction: column;
-    margin: 0 0 76px 30px;
+    margin: 0 0 30px 30px;
 }
 .social img{
     display: block;
@@ -169,10 +169,6 @@ div.window-text{
     animation-fill-mode: forwards;
 }
     a.nav{
-
-
-
-
         color: white;
         font-family: Arial;
         font-style: normal;
@@ -182,16 +178,156 @@ div.window-text{
     }
 
 main{
-    width: 80%;
+    width: 69%;
     height: 80%;
-    background-color: #fff;
+
     opacity: 0;
 
     animation-name: menu;
     animation-delay: 4.5s;
     animation-duration: 0.6s;
     animation-fill-mode: forwards;
+
+    position: relative;
+
 }
+    main .content{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    main .content a{
+        width: 100%;
+        height: 100%;
+    }
+        main .content .contour{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width:27.7vw ;
+            height: 54.3vh;
+            border: 7px solid;
+            border-color: #B81800;
+        }
+            main .content .project{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+                main .content .project h2{
+                    font-family: Jost, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 33px;
+
+                    color: white;
+                    margin:0;
+                    text-transform: uppercase;
+                }
+                main .content .project .img{
+                    width: 60vw;
+                    height: 66vh;
+                    border-top: 35px solid black;
+                    border-left: 35px solid black;
+                    
+                    z-index: 20;
+                }
+                    main .content .project .img .sub-img{
+                        height: 100%;
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                        white-space:nowrap;
+                    }
+                    main .content .project .img .sub-img .content{
+                        width: 100%;
+                        height: 100%;
+                        z-index: -20;
+                    }
+                    main .content .project .img .sub-img .content img{
+                        width: 100%;
+                        height: 100%;
+                    }
+        main .content .id{
+            position: absolute;
+            bottom: -3%;
+            right: -9%;
+
+            font-family: Arial Black;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 86px;
+            line-height: 121px;
+            text-align: center;
+
+            color: black;
+            -webkit-text-stroke: 1px white;
+
+        }
+    main .last{
+        position: absolute;
+        width: 49.5vw;
+        height: 50vh;
+
+
+        top:50%;
+        left: 0%;
+        transform: translate(-120%,-50%);
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+    }
+        main .last .content{
+            width: 100%;
+            height: 100%;
+            white-space:nowrap;
+            transform: translateX(100%)
+
+        }
+            main .last .content img{
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+            }
+            
+    main .next{
+        position: absolute;
+        width: 49.5vw;
+        height: 50vh;
+
+
+        top:50%;
+        right: 0%;
+        transform: translate(120%,-50%);
+        clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+    }
+        main .next .content{
+            width: 100%;
+            height: 100%;
+            white-space:nowrap;
+
+        }
+        main .next .content img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            white-space:nowrap;
+        }
+
+.next-button{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+
+    bottom: 3%;
+    right: 16%;
+    cursor: pointer;
+
+}
+    .next-button img{
+        width:32px;
+        height: 32px;
+    }
+
+
 
 
 
