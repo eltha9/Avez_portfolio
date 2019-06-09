@@ -1,4 +1,5 @@
 let next_button = document.querySelector('.next-button')
+let last_button = document.querySelector('.next-button')
 
 let position = 0
 
@@ -18,12 +19,26 @@ const color=['#B81800','#EFC1A7','#D1D1D1']
 const title_data = ['CONCEPT PAGE UNSPLASH','CONCEPT PAGE FOR A BLOG','THIBAULT’S PORTFOLIO']
 
 next_button.addEventListener('click', ()=>{
-    position ++
-    last.style.transform = `translateX(${-(position-1)*100}%)`
-    current.style.transform = `translateX(${-position*100}%)`
-    next.style.transform = `translateX(${-position*100}%)`
-    contour.style.background = color[position]
-    title.textContent= title_data[position]
-    id.textContent = `0${position+1}`
+    if(position<2){
+        position ++
+        last.style.transform = `translateX(${-(position-1)*100}%)`
+        current.style.transform = `translateX(${-position*101}%)`
+        next.style.transform = `translateX(${-position*100}%)`
+        contour.style.border = `7px solid ${color[position]}`
+        title.textContent= title_data[position]
+        id.textContent = `0${position+1}`
+    }
 
 })
+// last_button.addEventListener('click', ()=>{
+//     if(position<2){
+//         position ++
+//         last.style.transform = `translateX(${-(position-1)*100}%)`
+//         current.style.transform = `translateX(${-position*101}%)`
+//         next.style.transform = `translateX(${-position*100}%)`
+//         contour.style.border = `7px solid ${color[position]}`
+//         title.textContent= title_data[position]
+//         id.textContent = `0${position+1}`
+//     }
+
+// })
