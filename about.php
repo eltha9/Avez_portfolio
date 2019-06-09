@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gaëtan Avez - French Designer</title>
     <link rel="stylesheet" href="./styles/about.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="home-animation-window">
@@ -29,6 +37,9 @@
         <a class="facebook" href="https://www.facebook.com/gaetan.avez.3" title="Gaëtan Avez - Facebook"><img src="./images/facebook.svg" alt="Facebook logo"></a>
         <a href="https://dribbble.com/GaetanAvez" title="Gaëtan Avez - Dribbble"><img src="./images/dribble.svg" alt="Dribbble logo"></a>
     </div>
+    <a class="to-bottom" href="#bottom" >
+        <img  src="images/about_down_button.svg" alt="">
+    </a>
 
     </div>
     <main>
@@ -47,7 +58,7 @@
                 <a href="AVEZ_CV.pdf" target="blanck">My resume <img src="images/download_button.svg" alt=""></a>
             </div>
         </div>
-        <div class="middle">
+        <div class="middle" id="bottom">
             <h3>Experience</h3>
             <div class="exp">
                 <div class="project">
@@ -77,7 +88,6 @@
                     </div>
                 </div>
             </div>
-            <img src="images/about_down_button.svg" alt="">
         </div>
         <div class="bottom">
             <div class="language">

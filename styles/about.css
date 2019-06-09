@@ -5,7 +5,7 @@ body{
     background-color: black;
     margin: 0;
     position: relative;
-    perspective: 800px;
+    /* perspective: 800px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,14 +42,14 @@ a.logo{
 }
 
 .social{
-    position: absolute;
     position: fixed;
+
     bottom: 0;
     left: 0;
 
     display: flex;
     flex-direction: column;
-    margin: 0 0 76px 30px;
+    margin: 0 0 30px 30px;
 }
 .social img{
     display: block;
@@ -60,11 +60,24 @@ a.logo{
     margin: 22px 0;
 }
 
+.to-bottom{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 8%; 
+    margin-bottom: 30px;  
+}
+    .to-bottom img{
+        width: 100%;
+        height: 100%;
+    }
+
 /* 
     Main animation 
 */
 div.home-animation-window{
-    z-index: -2;
+    z-index: 0;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -82,7 +95,7 @@ div.home-animation-window{
         width: 15.5%;
     }
     div.home-animation-window .border{
-        border-left: 1px solid #979797;
+        border-left: 1px solid rgba(151, 151, 151, 0.3);
         position: relative;
     }
     div.home-animation-window .window-center{
@@ -106,7 +119,7 @@ div.home-animation-window{
         font-family: Arial;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 21px;
     }
 
@@ -262,6 +275,7 @@ main{
             font-size: 62px;
             line-height: 80px;
             margin-bottom: 40px;
+            margin-top: 30px;
         }
         main .bottom .language{
             width: 50%;

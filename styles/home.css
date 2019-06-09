@@ -82,7 +82,7 @@ div.home-animation-window{
         width: 15.5%;
     }
     div.home-animation-window .border{
-        border-left: 1px solid #979797;
+        border-left: 1px solid rgba(151, 151, 151, 0.3);
         transform: translateY(-100%);
         animation-name: bar;
         animation-delay: 2s;
@@ -177,7 +177,7 @@ div.window-text{
         font-family: Arial;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 21px;
     }
 
