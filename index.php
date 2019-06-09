@@ -85,6 +85,9 @@
     <div class="next-button">
         <img src="images/project_button.svg" alt="">
     </div>
+    <div class="last-button">
+        <img src="images/project_button.svg" alt="">
+    </div>
     <script src="./scripts/app.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 let next_button = document.querySelector('.next-button')
-let last_button = document.querySelector('.next-button')
+let last_button = document.querySelector('.last-button')
 
 let position = 0
 
@@ -22,7 +22,7 @@ next_button.addEventListener('click', ()=>{
     if(position<2){
         position ++
         last.style.transform = `translateX(${-(position-1)*100}%)`
-        current.style.transform = `translateX(${-position*101}%)`
+        current.style.transform = `translateX(${-position*102}%)`
         next.style.transform = `translateX(${-position*100}%)`
         contour.style.border = `7px solid ${color[position]}`
         title.textContent= title_data[position]
@@ -30,15 +30,22 @@ next_button.addEventListener('click', ()=>{
     }
 
 })
-// last_button.addEventListener('click', ()=>{
-//     if(position<2){
-//         position ++
-//         last.style.transform = `translateX(${-(position-1)*100}%)`
-//         current.style.transform = `translateX(${-position*101}%)`
-//         next.style.transform = `translateX(${-position*100}%)`
-//         contour.style.border = `7px solid ${color[position]}`
-//         title.textContent= title_data[position]
-//         id.textContent = `0${position+1}`
-//     }
+last_button.addEventListener('click', ()=>{
+    if(position>0){
+        position --
+        if(position ==0){
+            last.style.transform = `transform: translateX(100%)`
+            current.style.transform = `translateX(${position*101.5}%)`
+            next.style.transform = `translateX(${position*100}%)`
+        }else{
+            
+            last.style.transform = `translateX(${(position-1)*100}%)`
+            current.style.transform = `translateX(${position*101.5}%)`
+            next.style.transform = `translateX(${position*100}%)`
+        }
+        contour.style.border = `7px solid ${color[position]}`
+        title.textContent= title_data[position]
+        id.textContent = `0${position+1}`
+    }
 
-// })
+})

@@ -310,6 +310,7 @@ main{
             height: 100%;
             opacity: 0.6;
             white-space:nowrap;
+            
         }
 
 .next-button{
@@ -325,6 +326,23 @@ main{
     .next-button img{
         width:32px;
         height: 32px;
+        
+    }
+.last-button{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+
+    bottom: 3%;
+    left: 16%;
+    cursor: pointer;
+
+}
+    .last-button img{
+        width:32px;
+        height: 32px;
+        transform-origin: 50% 50%;
+        transform: rotateZ(180deg);
     }
 
 
