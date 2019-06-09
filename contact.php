@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gaëtan Avez - French Designer</title>
+    <title>Gaëtan Avez - Contact</title>
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
@@ -32,8 +32,30 @@
 
     </div>
     <main>
+        <h1>Leave me a message</h1>
+        <div class="mailing">
+            <span>Or by email: <a href="mailto:gaetan.avez@gmail.com">gaetan.avez@gmail.com</a></span>
+            <div class="inputs">
+                <div class="first-input">
+                    <input class="name" type="text" placeholder="Nom">
+                    <input class="email" type="email" placeholder="Email">
+                </div>
+                <div class="second-input">
+                    <span>Hello Gaetan, </span>
+                    <div class="text" contenteditable="true">
 
+                    </div>
+                </div>
+            </div>
+            <div class="send-button">
+                <span>Send it <img src="images/project_button.svg" alt=""></span>
+            </div>
+        </div>
+        <div class="validate hide">
+            <h2>Thanks for your message !</h2>
+            <span>I will repply soon</span>
+        </div>
     </main>
-    <script src="./scripts/app.js"></script>
+    <script src="./scripts/mail.js"></script>
 </body>
 </html>
