@@ -9,7 +9,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 a{
@@ -83,11 +82,6 @@ div.home-animation-window{
     }
     div.home-animation-window .border{
         border-left: 1px solid #979797;
-        transform: translateY(-100%);
-        animation-name: bar;
-        animation-delay: 2s;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
         position: relative;
     }
     div.home-animation-window .window-center{
@@ -98,61 +92,6 @@ div.home-animation-window{
         width: 15.5%;
         
     }
-
-div.window-text{
-    position: absolute;
-    color: white;
-
-    top:50%;
-    left:50%;
-
-
-
-    font-family: Frank Ruhl Libre, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 75px;
-    line-height: 89px;
-    text-align: center;
-    letter-spacing: 1.8px;
-
-
-
-    animation-name: welcome-global;
-    animation-delay: 2s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    
-}
-    div.window-text span.window-transform{
-        transform: rotateX(0deg);    
-    }
-    div.window-text span{
-        transform-origin: 0% 100%;
-        display: block;
-        backface-visibility: hidden;
-        transform: rotateX(-90deg);
-        transition-property: all;
-        transition-duration: 1s;
-        transition-timing-function: ease;
-        
-
-    }
-    div.window-text span.first{
-
-        animation-name: welcome;
-        animation-delay: 0.3s;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    div.window-text span.second{
-
-        animation-name: welcome;
-        animation-delay: 1s;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-    
     
 .nav{
     position: absolute; 
@@ -160,19 +99,8 @@ div.window-text{
     top:0;
     left: 2%;
 
-    /* display: none; */
-    opacity: 0;
-    animation-name: menu;
-    animation-delay: 3.8s;
-    align-self: auto;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
 }
     a.nav{
-
-
-
-
         color: white;
         font-family: Arial;
         font-style: normal;
@@ -197,34 +125,7 @@ main{
 
 /* ANIMATION */
 
-@keyframes welcome{
-    0%{
-        transform: translate(-50%,-50%) rotateX(-90deg);
-    }
-    100%{
-        transform: translate(-50%,-50%) rotateX(0deg);
-    }
-}
 
-@keyframes welcome-global{
-    0%{
-        top:50%;
-    }
-    100%{
-        top:-50%;
-    }
-}
-
-@keyframes menu{
-    0%{
-        opacity: 0;
-        
-    }
-    100%{
-        opacity: 1;
-        
-    }
-}
 @keyframes bar{
     0%{
         transform: translateY(-100%);

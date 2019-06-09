@@ -16,5 +16,5 @@ setTimeout(animation_text(),2000)
 */
 
 
-TweenMax.to(".window-text span.first", 0.5, {rotationX:0, delay:0})
-TweenMax.to(".window-text span.second", 0.5, {rotationX:0, delay:0.3})
+// TweenMax.to(".window-text span.first", 0.5, {rotationX:0, delay:0})
+// TweenMax.to(".window-text span.second", 0.5, {rotationX:0, delay:0.3})
